@@ -12,4 +12,4 @@ size_t response_length = modbus_process_request(
     &device, request, request_length, response, sizeof(response));
 ```
 
-The ESP-IDF task, UART configuration, RTU framing timer, ADC driver and exact pin map are board integration work and should be compiled and hardware-tested on the chosen target. Do not transmit if the core API returns zero.
+The ESP-IDF task, UART configuration, RTU framing timer, ADC driver and exact pin map must be compiled and hardware-tested on the chosen target. Do not transmit if the core API returns zero.
